@@ -13,11 +13,11 @@ list_of_lists = []
 
 for line in input:
 
-  stripped_line = line.strip()
+    stripped_line = line.strip()
 
-  line_list = sorted(list(map(int, stripped_line.split())), reverse=True)
+    line_list = sorted(list(map(int, stripped_line.split())), reverse=True)
 
-  list_of_lists.append(line_list)
+    list_of_lists.append(line_list)
 
 input.close()
 
@@ -47,6 +47,3 @@ for combination in combinations_list:
             divisible_sum += combo[0] / combo[1]
 
 print(f'The divisible sum is {divisible_sum}')
-
-
-
